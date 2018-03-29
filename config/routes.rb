@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :users, only: [:create]
 
   get '/register', to: 'users#new'
+  get '/register/success', to: 'users#success'
 end
